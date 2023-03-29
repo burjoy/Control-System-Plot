@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body class="bg-gray-200">
+    <nav class="bg-white w-screen list-none text-black shadow-md flex justify-end">
+        <i class="fa fa-user-circle text-xl self-center justify-self-start mr-auto ml-5"></i>
+        <li class="p-3 hover:bg-slate-800 hover:cursor-pointer hover:text-white mx-10">Home</li>
+        <li class="p-3 hover:bg-slate-800 hover:cursor-pointer hover:text-white mx-10">Courses</li>
+        <li class="p-3 hover:bg-slate-800 hover:cursor-pointer hover:text-white mx-10">Contact</li>
+        <li class="p-3 hover:bg-slate-800 hover:cursor-pointer hover:text-white mx-10">Coming soon</li>
+    </nav>
+
+    <article class="flex justify-evenly h-[90vh] items-center">
+        <div class="w-[20em]  bg-white text-center p-12">
+        <form action="process_data_A" method="post">
+            <label class="" for="Matrix_A">Test Input:Matrix A</label>
+            <br>
+            <input type="text" class="border-2 w-12 text-center" name="value1" value="">
+            <input type="text" class="border-2 w-12 text-center" name="value2" value="">
+            <input type="text" class="border-2 w-12 text-center" name="value3" value="">
+            <br>
+            <br>
+            <input type="text" class="border-2 w-12 text-center" name="value4" value="">
+            <input type="text" class="border-2 w-12 text-center" name="value5" value="">
+            <input type="text" class="border-2 w-12 text-center" name="value6" value="">
+            <br>
+            <br>
+            <input type="text" class="border-2 w-12 text-center" name="value7" value="">
+            <input type="text" class="border-2 w-12 text-center" name="value8" value="">
+            <input type="text" class="border-2 w-12 text-center" name="value9" value="">
+            <br>
+            <br>
+            <p class="">Test Input:Matrix B</p>
+            <input type="text" class="border-2 w-12 text-center" name="value10" value="">
+            <br>
+            <br>
+            <input type="text" class="border-2 w-12 text-center" name="value11" value="">
+            <br>
+            <br>
+            <input type="text" class="border-2 w-12 text-center" name="value12" value="">
+            <br>
+            <br>
+            <input type="submit" value="Submit" class="p-2 border-2 hover:bg-black hover:text-white hover:cursor-pointer rounded-md">
+        </form>
+        </div>
+        <div class="w-[30em]  bg-white text-center p-10" id="image_container">
+            <p>Plot</p>
+            <img src="data:image/png;base64,{{plot_url}}" alt=""> 
+            <!-- {% for value in values %}
+            <p>{{value}}</p> 
+            {% endfor %} -->
+        </div>
+    </article>
+
+    <footer>
+
+    </footer>
+<script src="web.js"></script>
+</body>
+</html>
